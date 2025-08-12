@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  /* Primary brand colors */
+  --color-primary: #2d6a4f; /* أخضر داكن - للزرار الأساسية */
+  --color-primary-light: #40916c; /* أخضر أفتح - Hover */
+  --color-primary-dark: #1b4332; /* أخضر أغمق - Active */
+
+  /* Accent / secondary */
+  --color-accent: #ffb703; /* أصفر برتقالي - Call to action */
+  --color-accent-light: #ffd166; /* أفتح للـ hover أو الخلفيات */
+
+  /* Neutral grays */
+  --color-gray-100: #f8f9fa; /* خلفية فاتحة جداً */
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-500: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-900: #212529; /* نص غامق */
+
+  /* Feedback colors */
+  --color-success: #38a169; /* أخضر نجاح */
+  --color-warning: #f6ad55; /* برتقالي تنبيه */
+  --color-error: #e53e3e; /* أحمر خطأ */
+
+  /* Text colors */
+  --text-color: var(--color-gray-900);
+  --text-light: var(--color-gray-500);
+
+  /* Background colors */
+  --bg-body: var(--color-gray-100);
+  --bg-card: #ffffff;
+}
+
+/* Example dark mode (optional) */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #95d5b2;
+    --color-primary-light: #b7e4c7;
+    --color-primary-dark: #74c69d;
+    --color-accent: #ffd166;
+    --bg-body: #1b1b1b;
+    --bg-card: #2c2c2c;
+    --text-color: #f8f9fa;
+    --text-light: #adb5bd;
+  }
+} */
+
+/* ---------- Usage Examples ---------- */
+
+/* body background & text */
+body {
+  background-color: var(--bg-body);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+}
+.btn-primary:active {
+  background-color: var(--color-primary-dark);
+}
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
