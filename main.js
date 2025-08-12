@@ -8,6 +8,6 @@ function loadComponent(selector, file) {
 
 // استدعاء في كل صفحة
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("#navbar", "../shared/navbar.html");
-  loadComponent("#footer", "../shared/footer.html");
+  loadComponent("#nav", "shared/navbar/navbar.html");
+  loadComponent("#footer", "shared/footer/footer.html");
 });
