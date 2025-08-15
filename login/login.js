@@ -1,8 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const savedLogin = localStorage.getItem('rememberLogin');
-  if (savedLogin) {
-    const { loginInput, password } = JSON.parse(savedLogin);
-    document.getElementById('loginInput').value = loginInput;
+  // استرجاع الـ loginInput دايمًا
+  const savedLoginInput = localStorage.getItem('loginInput');
+  if (savedLoginInput) {
+    document.getElementById('loginInput').value = savedLoginInput;
+  }
+
+  // استرجاع بيانات تذكرني (الباسورد)
+  const savedRemember = localStorage.getItem('rememberLogin');
+  if (savedRemember) {
+    const { loginInput, password } = JSON.parse(savedRemember);
+    document.getElementById('loginInput').value = loginInput; // يكتبها تاني لو فيه تذكرني
     document.getElementById('password').value = password;
     document.getElementById('rememberMe').checked = true;
   }
@@ -43,12 +50,19 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
       localStorage.setItem('loggedInUser', JSON.stringify(user));
 
-      if (rememberMe) {
-        localStorage.setItem('rememberLogin', JSON.stringify({ loginInput, password }));
-      } else {
-        localStorage.removeItem('rememberLogin');
-      }
+   // احفظ الـ loginInput دايمًا
+    localStorage.setItem('loginInput', loginInput);
 
+if (rememberMe) {
+  // لو المستخدم اختار تذكرني، احفظ الاتنين مع بعض
+  localStorage.setItem(
+    'rememberLogin',
+    JSON.stringify({ loginInput, password })
+  );
+} else {
+  // لو ما اختارش، احذف البيانات المخزنة للباسورد
+  localStorage.removeItem('rememberLogin');
+}
       window.location.href = '/vanilla-js-ecommerce/index.html';
     })
     .catch(err => {
