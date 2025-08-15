@@ -32,7 +32,7 @@ function getBestSellers() {
         for (const prod of items) {
           categoryDiv.innerHTML += `
             <div class="card">
-              <a href="/vanilla-js-ecommerce/product-details/product.html?id=${prod.id}">
+              <a href="../product-details/product.html?id=${prod.id}">
                 <img src="${prod.image}" alt="${prod.title}">
                 <p>${prod.title}</p>
                 <p><span>Rating: ${prod.rating.rate} </span> <span>Count: ${prod.rating.count}</span></p>

@@ -397,6 +397,15 @@
       "username": "mom",
       "email": "mohamedahmed221321@gmail.com",
       "password": "M@1310"
+    },
+    {
+      "id": "bb27",
+      "firstName": "Ahmed",
+      "lastName": "Hesham",
+      "phone": "01062385284",
+      "username": "ahmedhesham",
+      "email": "ahmedhesham357gh@gmail.com",
+      "password": "ahmedhesham123*"
     }
   ],
   "categories": [
@@ -404,49 +413,49 @@
       "id": "1",
       "name": "Men's Clothing",
       "description": "Clothing items and accessories for men",
-      "image": "../vanilla-js-ecommerce/assets/images/Men's Clothing.jpg"
+      "image": "assets/images/Men's Clothing.jpg"
     },
     {
       "id": "2",
       "name": "Women's Clothing",
       "description": "Clothing items and accessories for women",
-      "image": "../vanilla-js-ecommerce/assets/images/Women's Clothing.webp"
+      "image": "assets/images/Women's Clothing.webp"
     },
     {
       "id": "3",
       "name": "Electronics",
       "description": "Electronic devices, gadgets, and accessories",
-      "image": "../vanilla-js-ecommerce/assets/images/electronics.jpeg"
+      "image": "assets/images/electronics.jpeg"
     },
     {
       "id": "4",
       "name": "Jewelry",
       "description": "Rings, necklaces, bracelets, and other jewelry",
-      "image": "../vanilla-js-ecommerce/assets/images/Jewelry.jpeg"
+      "image": "assets/images/Jewelry.jpeg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Shoes",
       "description": "Casual, formal, and sports footwear",
-      "image": "../vanilla-js-ecommerce/assets/images/shoes.jpeg"
+      "image": "assets/images/shoes.jpeg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Bags",
       "description": "Handbags, backpacks, and travel bags",
-      "image": "../vanilla-js-ecommerce/assets/images/bags.jpeg"
+      "image": "assets/images/bags.jpeg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Home Decor",
       "description": "Furniture, lighting, and decorative items",
-      "image": "../vanilla-js-ecommerce/assets/images/home-decor.jpeg"
+      "image": "assets/images/home-decor.jpeg"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Sports",
       "description": "Sports equipment, apparel, and accessories",
-      "image": "../vanilla-js-ecommerce/assets/images/sports.jpeg"
+      "image": "assets/images/sports.jpeg"
     }
   ]
 }
