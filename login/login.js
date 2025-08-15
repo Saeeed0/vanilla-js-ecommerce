@@ -49,7 +49,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         localStorage.removeItem('rememberLogin');
       }
 
-      window.location.href = 'index.html';
+      window.location.href = '/vanilla-js-ecommerce/index.html';
     })
     .catch(err => {
       console.error(err);

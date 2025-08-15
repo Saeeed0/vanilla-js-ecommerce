@@ -388,6 +388,15 @@
       "username": "mos",
       "email": "king4545466754@gmail.com",
       "password": "M@1310123"
+    },
+    {
+      "id": "21ef",
+      "firstName": "Mohamed",
+      "lastName": "Ahmed",
+      "phone": "01063521473",
+      "username": "mom",
+      "email": "mohamedahmed221321@gmail.com",
+      "password": "M@1310"
     }
   ],
   "categories": [
