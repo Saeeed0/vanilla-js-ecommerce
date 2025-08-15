@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-    <div id="nav"></div>
-    <h1>login</h1>
-    <div id="footer"></div>
-    <script src="login.js"></script>
+  <div class="login-container">
+    <h2>Login</h2>
+   <form id="loginForm">
+  <input type="text" id="loginInput" placeholder="Email or Username" required />
+  <span class="error" id="loginError"></span>
+
+  <input type="password" id="password" placeholder="Password" required />
+  <span class="error" id="passwordError"></span>
+
+  <label>
+    <input type="checkbox" id="rememberMe" /> Remember Me
+  </label>
+
+  <button type="submit">Login</button>
+</form>
+
+
+    <p>Don't have an account? <a href="/vanilla-js-ecommerce/register/register.html">Register here</a></p>
+  </div>
+  <script src="login.js"></script>
 </body>
 </html>

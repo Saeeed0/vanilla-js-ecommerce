@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>register</title>
-    <link rel="stylesheet" href="register.css" />
-  </head>
-  <body>
-    <div id="nav"></div>
-    <h1>register</h1>
-    <div id="footer"></div>
-    <script src="register.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="register-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+  <input type="text" id="firstName" placeholder="First Name" required />
+  <span class="error" id="firstNameError"></span>
+
+  <input type="text" id="lastName" placeholder="Last Name" required />
+  <span class="error" id="lastNameError"></span>
+
+  <input type="text" id="phone" placeholder="Phone" required />
+  <span class="error" id="phoneError"></span>
+
+  <input type="text" id="username" placeholder="Username" required />
+  <span class="error" id="usernameError"></span>
+
+  <input type="email" id="email" placeholder="Email" required />
+  <span class="error" id="emailError"></span>
+
+  <input type="password" id="password" placeholder="Password" required />
+  <span class="error" id="passwordError"></span>
+
+  <button type="submit">Register</button>
+</form>
+
+
+    <p>Already have an account? <a href="/vanilla-js-ecommerce/login/login.html">Login here</a></p>
+  </div>
+  <script src="register.js"></script>
+</body>
 </html>
