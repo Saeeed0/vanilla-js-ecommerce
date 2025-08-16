@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <title>Register</title>
   <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="../shared/nav-footer.css">
 </head>
 <body>
-  <div class="register-container">
+  <div id="nav" style="position: fixed; top: 0;"></div>
+  <div style="margin-top: 100px">
+    <div class="register-container" style="margin-bottom: 70px; margin: auto">
     <h2>Register</h2>
     <form id="registerForm">
   <input type="text" id="firstName" placeholder="First Name" required />
@@ -28,11 +31,15 @@
   <span class="error" id="passwordError"></span>
 
   <button type="submit">Register</button>
+  
 </form>
 
 
     <p>Already have an account? <a href="../login/login.html">Login here</a></p>
   </div>
+  </div>
+  <div id="footer" style="margin-top: 100px;"></div>
+  <script src="../shared/nav-footer.js"></script>
   <script src="register.js"></script>
 </body>
 </html>

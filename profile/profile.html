@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile</title>
     <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="../shared/nav-footer.css">
+
   </head>
-  <body>
+  <body style="background: #f5f6fa;">
     <div id="nav"></div>
-    <h1>profile</h1>
-    <div id="footer"></div>
+    <div class="profile-container">
+  <div class="profile-card">
+
+    <div class="profile-field">
+      <label>Your Name:</label>
+      <div class="field-input">
+        <input type="text" readonly id="name">
+        <input type="button" value="Edit" onclick="edit(this);">
+        <span class="error" id="nameError"></span>
+      </div>
+    </div>
+
+    <div class="profile-field">
+      <label>Your Email:</label>
+      <div class="field-input">
+        <input type="text" readonly id="email">
+        <input type="button" value="Edit" onclick="edit(this);">
+        <span class="error" id="emailError"></span>
+      </div>
+    </div>
+
+    <div class="profile-field">
+      <label>Your Password:</label>
+      <div class="field-input">
+        <input type="password" readonly id="password">
+        <input type="button" value="Edit" onclick="edit(this);">
+        <span class="error" id="passwordError"></span>
+      </div>
+    </div>
+
+    <div class="profile-field">
+      <label>Your Phone:</label>
+      <div class="field-input">
+        <input type="text" readonly id="phone">
+        <input type="button" value="Edit" onclick="edit(this);">
+        <span class="error" id="phoneError"></span>
+      </div>
+    </div>
+
+    <div class="profile-field">
+      <label>Your Username:</label>
+      <div class="field-input">
+        <input type="text" readonly id="username">
+        <input type="button" value="Edit" onclick="edit(this);">
+        <span class="error" id="usernameError"></span>
+      </div>
+    </div>
+
+    <input type="button" value="Save" class="save-btn" onclick="save(event);">
+
+  </div>
+</div>
+
+    <div id="footer" style="position: fixed; bottom: 0;"></div>
     <script src="profile.js"></script>
+    <script src="../shared/nav-footer.js"></script>
   </body>
 </html>

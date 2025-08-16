@@ -8,9 +8,7 @@
 
 body {
   background: #f5f6fa; /* لون هادئ وفاتح */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   height: 100vh;
 }
 

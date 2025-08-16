@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <title>Login</title>
   <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="../shared/nav-footer.css">
 </head>
 <body>
-  <div class="login-container">
+  <div id="nav" style="position: fixed; top: 0;"></div>
+  <div style="margin-top: 100px; margin-bottom: 300px;">
+    <div class="login-container" style="margin-bottom: 70px; margin: auto">
     <h2>Login</h2>
    <form id="loginForm">
   <input type="text" id="loginInput" placeholder="Email or Username" required />
@@ -25,6 +28,9 @@
 
     <p>Don't have an account? <a href="../register/register.html">Register here</a></p>
   </div>
+  </div>
+  <div id="footer"></div>
   <script src="login.js"></script>
+  <script src="../shared/nav-footer.js"></script>
 </body>
 </html>

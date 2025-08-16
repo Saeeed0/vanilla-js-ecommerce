@@ -1,0 +1,112 @@
+.error {
+  position: absolute;
+  background: #ff4858;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: normal;
+  max-width: 250px;
+  line-height: 1.4;
+  margin-left: 8px;
+  margin-top: -2px;
+  display: none; /* default hidden */
+}
+
+/* Show only when not empty */
+.error:not(:empty) {
+  display: inline-block;
+}
+body{
+    margin: 0;
+}
+/* Center the profile card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding-bottom: 60px; /* space above footer */
+}
+
+/* Profile card */
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -70px;
+}
+
+/* Field rows */
+.profile-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.profile-field label {
+  flex: 1.2;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 8px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.profile-field input[type="text"],
+.profile-field input[type="password"] {
+  flex: 2;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.profile-field input[type="text"]:focus,
+.profile-field input[type="password"]:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+}
+
+
+/* Edit buttons */
+.profile-field input[type="button"] {
+  margin-left: 8px;
+  padding: 6px 12px;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+.profile-field input[type="button"]:hover {
+  background: #005fcc;
+}
+
+/* Save button */
+.save-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.save-btn:hover {
+  background: #218838;
+}

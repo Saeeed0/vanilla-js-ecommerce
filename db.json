@@ -402,10 +402,10 @@
       "id": "bb27",
       "firstName": "Ahmed",
       "lastName": "Hesham",
-      "phone": "01062385284",
-      "username": "ahmedhesham",
       "email": "ahmedhesham357gh@gmail.com",
-      "password": "ahmedhesham123*"
+      "password": "ahmedhesham123*",
+      "phone": "01062385284",
+      "username": "ahmedhesham"
     }
   ],
   "categories": [
