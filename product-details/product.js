@@ -1,5 +1,6 @@
 
 let userID;
+let cartID;
 let searcheEmailFlag = true;
 let registerFlag = false;
 
@@ -48,6 +49,54 @@ usersReq.onreadystatechange = function () {
     }
 }
 usersReq.send();
+
+
+let xhrGet = new XMLHttpRequest();
+xhrGet.open("GET", "http://localhost:3000/carts", false)
+xhrGet.onreadystatechange = function () {
+    if (xhrGet.status === 200 && xhrGet.readyState === 4) {
+        let carts = JSON.parse(xhrGet.responseText);
+
+        let existingCart = carts.find(c => c.userId == userID);
+     
+
+        if (existingCart) {
+            cartID = existingCart.id;
+        }
+        else {
+
+            let newCart = {
+            id: userID,
+            userId: Number(userID),
+            date: new Date(),
+            products: []
+            };
+
+            cartID=userID;
+
+            let xhrPost = new XMLHttpRequest();
+            xhrPost.open("POST", "http://localhost:3000/carts", false);
+            xhrPost.setRequestHeader("Content-Type", "application/json");
+            xhrPost.onload = function () {
+            // if (xhrPost.status === 201) {
+            //     console.log("✅ Cart Added:", xhrPost.responseText);
+            // }
+            };
+            xhrPost.send(JSON.stringify(newCart));
+
+        }
+    }
+};
+xhrGet.send();
+
+
+
+
+
+
+
+
+
 
 let req = new XMLHttpRequest();
 let product = document.getElementsByClassName("product-details")
@@ -100,7 +149,7 @@ req.onreadystatechange = function () {
 
             beyBtn.addEventListener("click", function () {
                 let xhrGet = new XMLHttpRequest();
-                xhrGet.open("GET", `http://localhost:3000/carts/${userID}`, false)
+                xhrGet.open("GET", `http://localhost:3000/carts/${cartID}`, false)
                 xhrGet.onreadystatechange = function () {
                     if (xhrGet.status === 200 && xhrGet.readyState == 4) {
                         let cart = JSON.parse(xhrGet.responseText);
@@ -121,7 +170,7 @@ req.onreadystatechange = function () {
                             });
                         }
                         let xhrPatch = new XMLHttpRequest();
-                        xhrPatch.open("PATCH", `http://localhost:3000/carts/${userID}`, false)
+                        xhrPatch.open("PATCH", `http://localhost:3000/carts/${cartID}`, false)
                         xhrPatch.setRequestHeader("Content-Type", "application/json");
                         xhrPatch.onload = function () {
                             if (xhrPatch.status === 200) {
@@ -132,7 +181,7 @@ req.onreadystatechange = function () {
                     }
                 }
                 xhrGet.send();
-                window.location.href = `../cart/cart.html?id=${userID}`;
+                window.location.href = `../cart/cart.html?id=${cartID}`;
 
             })
 
@@ -145,7 +194,4 @@ req.onreadystatechange = function () {
     }
 }
 req.send();
-
-
-
 
