@@ -1,7 +1,7 @@
 function useCategorySlider() {
   let xhr = new XMLHttpRequest();
-  xhr.onload = () => {
-    if (xhr.status === 200) {
+  xhr.onreadystatechange = () => {
+    if (xhr.status === 200 && xhr.readyState === 4) {
       const categories = JSON.parse(xhr.responseText);
 
       const track = document.querySelector("#sliderTrack");
@@ -81,7 +81,6 @@ function useCategorySlider() {
 
       // أوتوبلاي
       let autoPlayInterval = setInterval(goNext, 2000);
-
 
       // ضبط الوضع المبدئي
       updateSlider(false);

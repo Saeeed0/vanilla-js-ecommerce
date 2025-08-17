@@ -245,55 +245,29 @@
     {
       "id": "1",
       "userId": 1,
-      "date": "2020-03-02T00:00:00.000Z",
+      "date": "2025-08-17T12:23:13.262Z",
       "products": [
         {
-          "productId": 1,
-          "quantity": 4
+          "productId": "1",
+          "quantity": 7
         },
         {
-          "productId": 2,
+          "productId": "9",
           "quantity": 1
-        },
-        {
-          "productId": 3,
-          "quantity": 6
         }
       ]
     },
     {
       "id": "2",
       "userId": 2,
-      "date": "2020-01-02T00:00:00.000Z",
-      "products": [
-        {
-          "productId": 2,
-          "quantity": 4
-        },
-        {
-          "productId": 1,
-          "quantity": 10
-        },
-        {
-          "productId": 5,
-          "quantity": 2
-        }
-      ]
+      "date": "2025-08-17T15:12:16.959Z",
+      "products": []
     },
     {
       "id": "3",
       "userId": 3,
       "date": "2020-03-01T00:00:00.000Z",
-      "products": [
-        {
-          "productId": 1,
-          "quantity": 2
-        },
-        {
-          "productId": 9,
-          "quantity": 1
-        }
-      ]
+      "products": []
     },
     {
       "id": "4",
@@ -310,65 +284,38 @@
       "id": "5",
       "userId": 5,
       "date": "2020-03-01T00:00:00.000Z",
-      "products": [
-        {
-          "productId": 7,
-          "quantity": 1
-        },
-        {
-          "productId": 8,
-          "quantity": 1
-        }
-      ]
+      "products": []
     },
     {
       "id": "6",
       "userId": 6,
       "date": "2020-03-01T00:00:00.000Z",
-      "products": [
-        {
-          "productId": 10,
-          "quantity": 2
-        },
-        {
-          "productId": 12,
-          "quantity": 3
-        }
-      ]
+      "products": []
     },
     {
       "id": "7",
       "userId": 7,
       "date": "2020-03-01T00:00:00.000Z",
-      "products": [
-        {
-          "productId": 18,
-          "quantity": 1
-        }
-      ]
+      "products": []
     }
   ],
   "users": [
     {
       "id": "1",
+      "firstName": "john",
+      "lastName": "doe",
       "email": "john@gmail.com",
-      "username": "johnd",
       "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033"
+      "phone": "01119121841",
+      "username": "john123"
     },
     {
       "id": "2",
       "email": "saeed@gmail.com",
       "username": "saeed",
       "password": "m38rmF$",
-      "name": {
-        "firstname": "saeed",
-        "lastname": "owais"
-      },
+      "firstName": "saeed",
+      "lastName": "owais",
       "phone": "01119121841"
     },
     {
@@ -406,6 +353,24 @@
       "password": "ahmedhesham123*",
       "phone": "01062385284",
       "username": "ahmedhesham"
+    },
+    {
+      "id": "ba02",
+      "firstName": "saeed",
+      "lastName": "owais",
+      "phone": "01119121841",
+      "username": "saeed",
+      "email": "saidewisali@gmail.com",
+      "password": "A1234#"
+    },
+    {
+      "id": "41d0",
+      "firstName": "Sara",
+      "lastName": "Ali",
+      "phone": "01119121841",
+      "username": "sara",
+      "email": "sara@gmail.com",
+      "password": "ASDF1234$"
     }
   ],
   "categories": [

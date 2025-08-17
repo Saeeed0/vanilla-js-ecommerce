@@ -2,64 +2,19 @@
   padding: 0;
   margin: 0;
 }
-:root {
-  /* Primary brand colors */
-  --color-primary: #2d6a4f; /* أخضر داكن - للزرار الأساسية */
-  --color-primary-light: #40916c; /* أخضر أفتح - Hover */
-  --color-primary-dark: #1b4332; /* أخضر أغمق - Active */
 
-  /* Accent / secondary */
-  --color-accent: #ffb703; /* أصفر برتقالي - Call to action */
-  --color-accent-light: #ffd166; /* أفتح للـ hover أو الخلفيات */
-
-  /* Neutral grays */
-  --color-gray-100: #f8f9fa; /* خلفية فاتحة جداً */
-  --color-gray-200: #e9ecef;
-  --color-gray-300: #dee2e6;
-  --color-gray-500: #6c757d;
-  --color-gray-700: #495057;
-  --color-gray-900: #212529; /* نص غامق */
-
-  /* Feedback colors */
-  --color-success: #38a169; /* أخضر نجاح */
-  --color-warning: #f6ad55; /* برتقالي تنبيه */
-  --color-error: #e53e3e; /* أحمر خطأ */
-
-  /* Text colors */
-  --text-color: var(--color-gray-900);
-  --text-light: var(--color-gray-500);
-
-  /* Background colors */
-  --bg-body: var(--color-gray-100);
-  --bg-card: #ffffff;
-}
-
-/* Example dark mode (optional) */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #95d5b2;
-    --color-primary-light: #b7e4c7;
-    --color-primary-dark: #74c69d;
-    --color-accent: #ffd166;
-    --bg-body: #1b1b1b;
-    --bg-card: #2c2c2c;
-    --text-color: #f8f9fa;
-    --text-light: #adb5bd;
-  }
-} */
-
-/* ---------- Usage Examples ---------- */
-
-/* body background & text */
 body {
   background-color: var(--bg-body);
   color: var(--text-color);
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-main{
-  padding:0 30px;
+main {
+  padding: 0 30px;
+  margin-top: 80px;
+  position: relative;
 }
 
