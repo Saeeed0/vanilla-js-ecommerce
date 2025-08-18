@@ -66,7 +66,7 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
       })
       .then(res => {
         if (res.status === 201) {
-          window.location.href = '/vanilla-js-ecommerce/login/login.html';
+          window.location.href = '../login/login.html';
         } else {
           alert('Error registering user.');
         }

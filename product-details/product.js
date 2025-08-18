@@ -194,4 +194,3 @@ req.onreadystatechange = function () {
     }
 }
 req.send();
-

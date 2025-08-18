@@ -5,12 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commirce Ninjas Home Page</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="home/banner.css" />
+    <link rel="stylesheet" href="home/category.css" />
+    <link rel="stylesheet" href="home/products.css" />
+    <link rel="stylesheet" href="shared/nav-footer.css">
   </head>
   <body>
     <div id="nav"></div>
-    <header>header</header>
-    <main>main</main>
+    <main>
+      <header id="banner">
+        <div class="slider">
+          <img class="slide active" src="assets/images/banner1.png" alt="" />
+          <img class="slide" src="assets/images/banner2.png" alt="" />
+          <img class="slide" src="assets/images/banner3.png" alt="" />
+          <img class="slide" src="assets/images/banner4.png" alt="" />
+
+          <button id="prev">⬅</button>
+          <button id="next">➡</button>
+        </div>
+      </header>
+      <!-- slider catImg1,catName1 -->
+      <section id="categorySlider" class="category-slider">
+        <button class="prev">⬅</button>
+        <div class="slider-wrapper">
+          <div id="sliderTrack" class="slider-track">
+            <!-- Cards... -->
+          </div>
+        </div>
+
+        <button class="next">➡</button>
+      </section>
+
+      <section id="best-sellers" class="categories">
+        <!-- best sellers for category1, -->
+      
+        </div>
+        
+        <!-- best sellers for category2, 
+        best sellers for category3 -->
+      </section>
+    </main>
     <div id="footer"></div>
     <script src="main.js"></script>
+    <script src="home/banner.js"></script>
+    <script src="home/category-slider.js"></script>
+    <script src="home/products.js"></script>
+    <script src="shared/nav-footer.js"></script>
   </body>
 </html>

@@ -8,10 +8,7 @@
 
 body {
   background: #f5f6fa; /* خلفية هادئة */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  
 }
 
 /* حاوية تسجيل الدخول */

@@ -63,7 +63,7 @@ if (rememberMe) {
   // لو ما اختارش، احذف البيانات المخزنة للباسورد
   localStorage.removeItem('rememberLogin');
 }
-      window.location.href = '/vanilla-js-ecommerce/index.html';
+      window.location.href = '../index.html';
     })
     .catch(err => {
       console.error(err);
