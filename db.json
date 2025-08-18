@@ -243,60 +243,62 @@
   ],
   "carts": [
     {
-      "id": "1",
-      "userId": 1,
-      "date": "2025-08-17T12:23:13.262Z",
+      "id": "111",
+      "userId": 111,
+      "date": "2025-08-18T13:52:45.162Z",
       "products": [
         {
-          "productId": "1",
-          "quantity": 7
+          "productId": "3",
+          "quantity": 1
         },
         {
-          "productId": "9",
+          "productId": "2",
           "quantity": 1
         }
       ]
     },
     {
-      "id": "2",
-      "userId": 2,
-      "date": "2025-08-17T15:12:16.959Z",
-      "products": []
-    },
-    {
-      "id": "3",
-      "userId": 3,
-      "date": "2020-03-01T00:00:00.000Z",
-      "products": []
-    },
-    {
-      "id": "4",
-      "userId": 4,
-      "date": "2020-01-01T00:00:00.000Z",
+      "id": "f0f6",
+      "userId": null,
+      "date": "2025-08-18T13:52:32.258Z",
       "products": [
         {
-          "productId": 1,
-          "quantity": 4
+          "productId": "3",
+          "quantity": 1
         }
       ]
     },
     {
-      "id": "5",
-      "userId": 5,
-      "date": "2020-03-01T00:00:00.000Z",
+      "id": "f0f6",
+      "userId": null,
+      "date": "2025-08-18T13:52:36.103Z",
       "products": []
     },
     {
-      "id": "6",
-      "userId": 6,
-      "date": "2020-03-01T00:00:00.000Z",
-      "products": []
+      "id": "f2a6",
+      "userId": "f2a6",
+      "date": "2025-08-18T13:57:10.278Z",
+      "products": [
+        {
+          "productId": "3",
+          "quantity": 1
+        }
+      ]
     },
     {
-      "id": "7",
-      "userId": 7,
-      "date": "2020-03-01T00:00:00.000Z",
-      "products": []
+      "id": "dd4e",
+      "userId": "dd4e",
+      "date": "2025-08-18T14:15:06.628Z",
+      "products": [
+        {
+          "productId": "1",
+          "quantity": 1
+        },
+        {
+          "productId": "3",
+          "quantity": 1
+        }
+      ]
     }
   ],
   "users": [
@@ -371,6 +373,51 @@
       "username": "sara",
       "email": "sara@gmail.com",
       "password": "ASDF1234$"
+    },
+    {
+      "id": "5857",
+      "firstName": "Ibraheem",
+      "lastName": "Ahmed",
+      "phone": "01119121841",
+      "username": "ibraheem",
+      "email": "ibraheem@gmail.com",
+      "password": "ibraheem1$"
+    },
+    {
+      "id": "faf7",
+      "firstName": "abdullah",
+      "lastName": "mahmoud",
+      "phone": "01112086834",
+      "username": "abdullah",
+      "email": "abdallah@gmail.com",
+      "password": "123456@A"
+    },
+    {
+      "id": "111",
+      "firstName": "asd",
+      "lastName": "asdf",
+      "phone": "01119121841",
+      "username": "asd",
+      "email": "asd@gmail.com",
+      "password": "123456@a"
+    },
+    {
+      "id": "f2a6",
+      "firstName": "asdf",
+      "lastName": "asd",
+      "phone": "01119121841",
+      "username": "asdf",
+      "email": "asdf@gmail.com",
+      "password": "123456@a"
+    },
+    {
+      "id": "dd4e",
+      "firstName": "ZSaeed1",
+      "lastName": "asdf",
+      "phone": "01119121841",
+      "username": "asdff",
+      "email": "asdf@gmail.com",
+      "password": "asdf1234$"
     }
   ],
   "categories": [

@@ -4,8 +4,6 @@ let cartID;
 let searcheEmailFlag = true;
 let registerFlag = false;
 
-window.localStorage.setItem("UserName", "Mido")
-window.localStorage.removeItem("Email")
 
 
 let usersReq = new XMLHttpRequest();
@@ -15,7 +13,7 @@ usersReq.onreadystatechange = function () {
 
         let jsData = JSON.parse(this.responseText);
         let user;
-        let userName = window.localStorage.getItem("UserName")
+        let userName = window.localStorage.getItem("loginInput")
         if (userName) {
             user = jsData.find(function (p) {
                 return p.username === userName;
@@ -50,6 +48,8 @@ usersReq.onreadystatechange = function () {
 }
 usersReq.send();
 
+console.log("///////////////")
+console.log(userID)
 
 let xhrGet = new XMLHttpRequest();
 xhrGet.open("GET", "http://localhost:3000/carts", false)
@@ -67,10 +67,13 @@ xhrGet.onreadystatechange = function () {
 
             let newCart = {
             id: userID,
-            userId: Number(userID),
+            userId: userID,
+            
             date: new Date(),
             products: []
             };
+            console.log("///////////////")
+            console.log(userID)
 
             cartID=userID;
 
